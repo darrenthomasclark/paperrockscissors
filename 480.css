@@ -1,0 +1,145 @@
+html {
+height: 100%;
+}
+
+h1 {
+  font-family: 'Libre Baskerville',serif;
+  font-size: 48px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h2 {
+  font-family: 'Libre Baskerville',serif;
+  font-size: 14px;
+  font-weight: 300;
+  margin: 0;
+}
+
+h3 {
+  font-family: 'Libre Baskerville',serif;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+
+h4 {
+  font-family: 'Open Sans', serif;
+  font-size: 12px;
+  font-weight: 200;
+  margin: 0;
+}
+
+body {
+  background-image: url(images/bg.gif);
+  background-repeat: repeat;
+  margin: 0;
+  min-height: 100%;
+}
+
+.hands {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.paper {
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+  width: 200px;
+}
+
+.rock {
+  height: 200px;
+  width: 200px;
+}
+
+.scissors {
+  height: 200px;
+  width: 200px;
+}
+
+.primaryContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.topContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+}
+
+.logotype {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logotype a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logotype a:hover {
+  text-decoration: underline;
+  color: #000;
+}
+
+.logotype a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+.footercontainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.instructor {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+.instructor a {
+  text-decoration: none;
+}
+.instructor a:hover {
+  text-decoration: underline;
+}
+.instructor a:visited {
+  text-decoration: underline;
+  color: #000
+}
+.tiy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 15px;
+}
+
+.tiy a {
+  text-decoration: none;
+  color: #000
+}
+
+.tiy a:hover {
+  text-decoration: underline;
+  color: #000
+}
+.tiy a:visited {
+  text-decoration: underline;
+  color: #000
+}
