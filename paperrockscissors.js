@@ -1,34 +1,40 @@
-let userChoice = ''
-let computerChoice = ''
+let yourMove = ''
+let computerMove = ''
 
+// TEXT INSTRUCTIONS
 const initialize = () => {
-  document.querySelector('.output').textContent = 'Choose Paper, Rock or Scissors'
+  document.querySelector('.output1').textContent = 'Choose Paper, Rock or Scissors'
 }
 
 document.addEventListener('DOMContentLoaded', initialize)
 
-let rock = document.querySelector('.input button.rock')
-let scissors = document.querySelector('.input button.scissors')
-let paper = document.querySelector('.input button.paper')
+let rock = document.querySelector('.rock')
+let scissors = document.querySelector('.scissors')
+let paper = document.querySelector('.paper')
 
+// FOR LOOP CONTAINING MATH LOGIC
 let startGame = () => {
-  computerChoice = Math.random()
-  if (computerChoice < 0.33) {
-    computerChoice = 'rock'
+  computerMove = Math.random()
+  if (computerMove < 0.33) {
+    computerMove = 'rock'
     console.log('rock')
-  } else if (computerChoice <= 0.64) {
-    computerChoice = 'paper'
+  } else if (computerMove <= 0.64) {
+    computerMove = 'paper'
     console.log('paper')
   } else {
-    computerChoice = 'scissors'
+    computerMove = 'scissors'
     console.log('scissors')
   }
-  document.querySelector('h1').textContent = 'I chose...' + computerChoice
-  compare(userChoice, computerChoice)
+
+// I DONT WANT THIS TEXT AREA---JUST WIN, LOSE OR DRAW
+  document.querySelector('textstatus').textContent = 'I chose...' + computerMove
+  compare(yourMove, computerMove)
+
+// VARIABLE COMPARISONS
 }
 let compare = (choice1, choice2) => {
   if (choice1 === choice2) {
-    document.querySelector('.output').textContent = 'A Draw!'
+    document.querySelector('.textstatus').textContent = 'A Draw!'
   } if (choice1 === 'scissors') {
     if (choice2 === 'paper') {
       document.querySelector('.output').textContent = 'You Win!'
@@ -50,15 +56,16 @@ let compare = (choice1, choice2) => {
   }
 }
 
+// CLICK FUNCTIONALITY
 rock.addEventListener('click', function () {
-  userChoice = 'rock'
+  yourMove = 'rock'
   startGame()
 })
 scissors.addEventListener('click', function () {
-  userChoice = 'scissors'
+  yourMove = 'scissors'
   startGame()
 })
 paper.addEventListener('click', function () {
-  userChoice = 'paper'
+  yourMove = 'paper'
   startGame()
 })
