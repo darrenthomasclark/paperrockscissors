@@ -291,3 +291,13 @@ body {
   color: white;
   width: 100%;
 }
+
+.computerreturn {
+    text-align: center;
+    font-family: 'Libre Baskerville',serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    width: 100%;
+    margin-top: 15px;
+  }
